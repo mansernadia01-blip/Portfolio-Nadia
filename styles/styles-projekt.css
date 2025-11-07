@@ -1,0 +1,116 @@
+
+.titel-section, .card-projekte-container {
+    margin-left: 6rem;
+    margin-right: 6rem;
+}
+
+
+.card-projekte-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.card-projekte {
+    width: 30%;
+    position: relative;
+}
+
+.card-projekte img{
+    width: 100%;
+    aspect-ratio: 1 /  1;
+    border-radius: 10px;
+    object-fit: cover;
+    }
+
+.card-projekte::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  height: 98%;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.2); /* 20 % Schwarz */
+  z-index: 1;
+}
+
+.card-projekte h2{
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: white;
+    padding: 2rem;
+    margin: 0;
+    z-index: 2;
+}
+
+.purple-container{
+    height: 500px;
+    background-color: var(--accent-color-lila);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 6rem;
+    padding-left: 6rem;
+}
+
+.calltoaction-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 5%;
+}
+
+
+.calltoaction-box h2{
+    max-width: 35%;
+    margin: 0px;
+}
+
+
+
+/*Responsive*/
+
+
+
+@media screen and (max-width: 600px) {
+	.card-projekte-container {
+		flex-direction: column;
+        justify-content: center;
+	}
+
+    .card-projekte {
+        width: 100%;
+    }
+
+    .calltoaction-box {
+		flex-direction: column;
+        align-items: flex-start;
+        gap: 10%;
+        margin-left: 15%;
+	}
+
+    .calltoaction-box h2{
+        max-width: 80%;
+        margin-bottom: 1rem;
+    }
+    
+    .text{
+        font-size: 40px;
+        max-width: 70%;
+    }
+
+    .titel-section, .card-projekte-container {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .purple-container {
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+}
+

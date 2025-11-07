@@ -1,0 +1,284 @@
+@font-face {
+    font-family: ProtestStrike;
+    src: url(/fond/Protest_Strike/ProtestStrike-Regular.ttf);
+}
+
+
+
+html {
+	--accent-color-darklila: #998FC7;
+	--accent-color-lila: #D4C2FC;
+	--accent-color-lila1: #F9F5FF;
+	--accent-color-orange: #FDCA40;
+	--accent-color-yellow: #FFF0AC;
+	--color-blue:#34344A;
+	--font-color: #101013;
+}
+
+/* Allgemein */
+
+body, html {
+	margin: 0;
+	padding: 0;
+	font-family: "nirmala-ui", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 18px;
+	color: var(--font-color);
+}
+
+body {
+	max-width: 1200px;
+	margin: auto;
+}
+
+main {
+	max-width: 1200px;
+}
+
+h1{
+	font-size: 72px;
+	font-family: ProtestStrike;
+	font-weight: regular;
+	color: var(--color-blue);
+}
+
+h2{
+	font-size: 48px;
+	font-family: ProtestStrike;
+}
+
+h3{
+	font-size: 32px;
+	font-family: "nirmala-ui", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+h4{
+	font-size: 24px;
+	font-family: "nirmala-ui", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+h5{
+	font-size: 24px;
+	font-weight: bold;
+	font-family: "nirmala-ui", sans-serif;
+	font-weight: 700;
+	font-style: normal;
+}
+
+h6{
+	font-size: 18px;
+	font-weight: bold;
+	margin: 0px;
+	font-family: "nirmala-ui", sans-serif;
+	font-weight: 700;
+	font-style: normal;
+}
+
+h7{
+	font-size: 18px;
+	font-weight: bold;
+	font-family: "nirmala-ui", sans-serif;
+	font-weight: 700;
+	font-style: normal;
+}
+
+
+/* Navigation */
+.logo img{
+	height: auto;
+    width: 65px;
+}
+
+
+header {
+	height: 132px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 35%;
+	padding-left: 6rem;
+	padding-right: 6rem;
+}
+
+
+header nav ul {
+	list-style: none;
+	padding: 0;
+	display: flex;
+	gap: 60px;
+}
+
+header nav ul li a {
+	text-decoration: none;
+	color: black;
+	font-size: 18px;
+}
+
+/*main*/
+
+.button-purple{
+	width: 162px;
+	height: 45px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	background-color: var(--accent-color-lila);
+	border-radius: 15px;
+	font-size: 20px;
+	color: var(--color-blue);
+}
+
+.button-purple:hover {
+	background-color: var(--accent-color-lila1);
+	color: var(--color-blue);
+}
+
+
+.button-orange{
+	width: 162px;
+	height: 45px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	background-color: var(--accent-color-orange);
+	border-radius: 15px;
+	font-size: 20px;
+	color: var(--color-blue);
+}
+
+.button-orange:hover {
+	background-color: var(--accent-color-yellow);
+	color: var(--color-blue);
+}
+
+
+/*footer*/
+
+footer{
+	background-color: var(--color-blue);
+	align-content: center;
+	height: 320px;
+}
+
+.footer-content{
+	display: flex;
+	justify-content: space-between;
+	color: white;
+	margin: 5rem;
+}
+
+.contact-footer p{
+	margin: 1rem;
+
+}
+
+.contact-footer h4 {
+	margin: 1rem;
+}
+
+.impressum-footer{	
+	align-self: flex-end;
+}
+
+.impressum-footer p {
+	margin: 1rem;
+}
+
+/*footer*/
+@media screen and (max-width: 600px) {
+	.flex-row-container {
+		flex-direction: column;
+	}
+
+	header{
+		padding-left: 1rem;
+		padding-right: 1rem;
+		gap: 15%;
+	}
+
+	footer{
+		height: 530px;
+		
+	}
+
+	.footer-content {
+		flex-direction: column;
+		margin: 1rem;
+	}
+
+	.impressum-footer {
+		align-self: auto;
+		margin-top: 3rem;
+	}
+}
+
+
+/*
+
+
+div, article, figure {
+	box-sizing: border-box;
+}
+
+
+
+
+
+h1, h2, h3, h4, h5, h6, p, li {
+	max-width: 800px;
+}
+
+h1 {
+    color: var(--accent-color);
+	background-color: chartreuse;
+	padding: 1rem;
+	padding-top: 1.3rem;
+}
+
+
+
+a {
+	color: var(--accent-color);
+}
+
+.image-text-combo {
+	position: relative;
+	width: 100%;
+}
+
+.overlay-text {
+	position: absolute;
+	top: 0px;
+	padding: 3rem;
+	font-size: 2rem;
+	color: white;
+	background-color: #00000088;
+	width: 100%;
+}
+
+.flex-row {
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 50px;
+	justify-content: space-between;
+}
+
+.flex-row {
+	min-width: 200px;
+	max-width: 45%;
+}
+
+@media screen and (max-width: 600px) {
+	.flex-row {
+		max-width: 100%;
+	}
+}
+ */
