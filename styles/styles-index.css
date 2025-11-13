@@ -1,0 +1,149 @@
+.section-einstieg {
+    padding-left: 6rem;
+    padding-right: 6rem;
+    padding-top: 2rem;
+}
+
+.section-einstieg img {
+    width: 500px;
+    display: block;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.section-einstieg h3 {
+    margin-bottom: -2rem;
+    margin-top: 0;
+}
+
+.section-einstieg h1 {
+    margin-bottom: 0
+}
+
+
+/* Ziel */
+
+.ziel {
+    height: 670px;
+    background-color: var(--color-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+
+.ziel-abschnitt { 
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 4rem;
+}
+
+
+
+
+/* Ziel-info */
+
+.ziel-info {
+    padding: 6rem;
+    display: flex;
+    justify-content: space-between ;
+}
+
+.ziel-info article {
+    width: 50%;
+}
+
+.ziel-grafik {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+.ziel-grafik {
+    color: var(--accent-color-darklila);
+}
+
+.ziel-list { 
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem;
+	border: 1px solid var(--accent-color-darklila);
+	border-radius: 5px;
+    color: var(--accent-color-darklila);
+}
+
+
+
+.ziel-info figure {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1rem;
+}
+
+.ziel-info figure img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+
+/*Responsive*/
+
+@media screen and (max-width: 600px) {
+	.section-einstieg, .ziel-info {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    
+    
+    .section-einstieg img {
+		width: 100%;
+	}
+
+    .section-einstieg h3 {
+        margin-bottom: 0;
+    }
+
+    .ziel{
+        flex-direction: column;
+    }
+
+    .ziel-info {
+        flex-direction: column;
+    }
+
+    .ziel-info article {
+        width: 100%;
+    }
+
+    .ziel-info figure {
+        width: 100%;
+        align-items: flex-start;
+        margin-left: 0;
+        margin-right: 0;
+    }
+   
+
+    .ziel-abschnitt {
+        flex-direction: column;
+    }
+
+    .ziel-grafik {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    
+    .ziel-grafik p {
+        width: 100px;
+    }
+
+
+
+}

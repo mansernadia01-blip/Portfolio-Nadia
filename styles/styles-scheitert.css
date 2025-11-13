@@ -1,5 +1,10 @@
-
 /*Projekteinstieg*/
+
+.projektseite {
+    padding-left: 6rem;
+    padding-right: 6rem;
+    padding-top: 2rem;
+}
 
 .projekt-einstieg {
     display: flex;
@@ -14,7 +19,7 @@
 }
 
 .projekt-titelbild {
-    width: 40%;
+    width: 50%;
 }
 
 .projekt-titelbild img{
@@ -26,25 +31,39 @@
 .card-facts-container{
     display: flex;
     flex-wrap: wrap;
+    gap: 1rem;
+    border: 5px solid var(--color-dark-gray);
 }
 
 .card-facts{
-    width: 50%;
+    width: calc(50% - 4rem);
+    padding: 1rem;
+	border: 1px solid var(--color-blue);
+	border-radius: 5px;
+    color: var(--color-blue);
+}
+
+.card-facts p {
+    margin-block-start: 0.2em;
+    margin-block-end: 0em;
+    color: var(--color-blue);
 }
 
 /*Postkarten*/
 
 .postcard {
-    width: 100%;
+    width: calc(100% - 12rem);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
 }
 
 .postcard img{
-    width: 18%;
+    width: calc( 90% / 4);
     height: auto;
     object-fit: cover;
 }
@@ -59,6 +78,8 @@
     margin-top: 3rem;
     margin-bottom: 3rem;
     background-color: var(--accent-color-orange);
+    padding-left: 6rem;
+    padding-right: 6rem;
 }
 
 .leoporello img{
@@ -70,11 +91,82 @@
 /*Awards*/
 
 .awards {
-    gap: 5%;
+    gap: 1rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.awards-container{
+    display: flex;
+    flex-direction: row;
+    width: 65%;
+    gap: 1rem;
+}
+
+.awards p {
+    width: 30%;
 }
 
 .awards img{
-    width: 30%;
+    width: calc(50% - 0.5rem);
+    justify-content: space-between;
     height: auto;
     object-fit: cover;
 }
+
+/*responsive*/
+
+@media screen and (max-width: 600px) {
+    .postcard, .projektseite, .leoporello, .awards {
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+
+    .projekt-einstieg {
+        flex-direction: column-reverse;
+    }
+
+    .projekt-titelbild {
+        width: 100%;
+    }
+    
+   .card-facts-container, .projekt-beschrieb {
+        width: 100%;
+        justify-content: space-between;
+   }
+
+   .postcard {
+        width: calc(100% - 4rem);    
+        flex-wrap: wrap;
+        gap: 1.5rem;
+   }
+   .postcard img{
+        width: calc( 90% / 2)
+   }
+
+    .card-facts {
+        width: calc((100% - 5.2rem)/2);
+    }   
+
+    .awards {
+        width: calc(100% - 4rem);
+        flex-direction: column;
+    }
+
+    .awards-container {
+        width: calc(50% - 0.5rem);
+        gap: 1rem;
+    }
+
+    .awards img {
+        width: 100%;
+    }
+
+    .awards p {
+        width: 100%;
+    }

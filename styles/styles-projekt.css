@@ -2,6 +2,7 @@
 .titel-section, .card-projekte-container {
     margin-left: 6rem;
     margin-right: 6rem;
+    padding-top: 2rem;
 }
 
 
@@ -66,7 +67,7 @@
 
 
 .calltoaction-box h2{
-    max-width: 35%;
+    max-width: 40%;
     margin: 0px;
 }
 
